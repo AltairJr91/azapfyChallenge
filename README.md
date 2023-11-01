@@ -42,7 +42,8 @@ Este controlador é responsável por recuperar dados de entregas de uma API exte
 ## Exemplo de Uso
 
 - Acesse o controlador fazendo uma requisição HTTP para a rota apropriada.
-  - : `GET /delivery`
+- Use o comando php artisan serve para rodar a aplicação
+- faça um GET na rota '/delivery' no Postman ou Insomnia usando o local host na porta passada pelo prompt comando. 
 
 ## Como Executar
 
