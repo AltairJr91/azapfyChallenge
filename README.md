@@ -42,7 +42,7 @@ Este controlador é responsável por recuperar dados de entregas de uma API exte
 ## Exemplo de Uso
 
 - Acesse o controlador fazendo uma requisição HTTP para a rota apropriada.
-  - Por exemplo: `GET /entregas`
+  - : `GET /delivery`
 
 ## Como Executar
 
