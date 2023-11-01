@@ -7,29 +7,50 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-#Descrição:
-O DeliveryController é responsável por recuperar dados de entregas de uma API externa e apresentar informações sobre as entregas concluídas e em aberto, agrupando os valores por transportadora.
+# Controlador de Entregas
 
-#Funcionalidade:
-Requisição de Dados:
+Este controlador é responsável por recuperar dados de entregas de uma API externa e apresentar informações sobre as entregas concluídas e em aberto, agrupando os valores por transportadora.
 
-O controlador faz uma requisição para uma API externa para obter dados das entregas.
-As informações obtidas são sobre o status, valor, nome e código da transportadora.
-Agrupamento por Status:
+## Funcionalidades
 
-As entregas são separadas com base no status: "COMPROVADO" para entregas concluídas e "ABERTO" para entregas em aberto.
-Agrupamento por Transportadora:
+- **Obtenção de Dados:**
+  - O controlador faz uma requisição para uma API externa para obter dados das entregas.
+  - As informações obtidas incluem o status, valor, nome e código da transportadora.
 
-Os valores são agrupados por transportadora, somando os valores correspondentes para cada transportadora.
-Cada transportadora possui uma entrada no resultado final, mostrando o nome da transportadora, seu código e a soma dos valores das entregas correspondentes.
-Retorno dos Resultados:
+- **Agrupamento por Status:**
+  - As entregas são separadas com base no status: "COMPROVADO" para entregas concluídas e "ABERTO" para entregas em aberto.
 
-Os resultados são estruturados em um objeto JSON.
-Há duas seções no retorno: "Entregas concluídas" e "Entregas em aberto".
-Cada seção contém uma lista das transportadoras com os valores consolidados.
-#Uso:
-Requisição:
-O controlador é acessado via rota para obter as informações sobre as entregas.
-Observações:
-Certifique-se de que a API externa está acessível e retornando os dados corretamente para que o controlador funcione adequadamente.
-Os dados das entregas são processados e agrupados de acordo com o status e a transportadora.
+- **Agrupamento por Transportadora:**
+  - Os valores são agrupados por transportadora, somando os valores correspondentes para cada transportadora.
+  - Cada transportadora possui uma entrada no resultado final, mostrando o nome da transportadora, seu código e a soma dos valores das entregas correspondentes.
+
+- **Retorno dos Resultados:**
+  - Os resultados são estruturados em um objeto JSON.
+  - Há duas seções no retorno: "Entregas concluídas" e "Entregas em aberto".
+  - Cada seção contém uma lista das transportadoras com os valores consolidados.
+
+## Uso
+
+- **Requisição:**
+  - O controlador é acessado via rota para obter as informações sobre as entregas.
+
+## Observações
+
+- Certifique-se de que a API externa está acessível e retornando os dados corretamente para que o controlador funcione adequadamente.
+- Os dados das entregas são processados e agrupados de acordo com o status e a transportadora.
+
+## Exemplo de Uso
+
+- Acesse o controlador fazendo uma requisição HTTP para a rota apropriada.
+  - Por exemplo: `GET /entregas`
+
+## Como Executar
+
+- Clone o projeto.
+- Configure as variáveis de ambiente necessárias.
+- Instale as dependências.
+- Execute a aplicação.
+
+## Dependências
+
+- Framework Laravel
