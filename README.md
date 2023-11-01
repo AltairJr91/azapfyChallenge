@@ -30,18 +30,6 @@ Este controlador é responsável por recuperar dados de entregas de uma API exte
   - Cada seção contém uma lista das transportadoras com os valores consolidados.
 
 ## Uso
-
-- **Requisição:**
-  - O controlador é acessado via rota para obter as informações sobre as entregas.
-
-## Observações
-
-- Certifique-se de que a API externa está acessível e retornando os dados corretamente para que o controlador funcione adequadamente.
-- Os dados das entregas são processados e agrupados de acordo com o status e a transportadora.
-
-## Exemplo de Uso
-
-- Acesse o controlador fazendo uma requisição HTTP para a rota apropriada.
 - Use o comando php artisan serve para rodar a aplicação
 - faça um GET na rota '/delivery' no Postman ou Insomnia usando o local host na porta passada pelo prompt comando. 
 
@@ -51,6 +39,11 @@ Este controlador é responsável por recuperar dados de entregas de uma API exte
 - Configure as variáveis de ambiente necessárias.
 - Instale as dependências.
 - Execute a aplicação.
+
+## Observações
+
+- Certifique-se de que a API externa está acessível e retornando os dados corretamente para que o controlador funcione adequadamente.
+- Os dados das entregas são processados e agrupados de acordo com o status e a transportadora.
 
 ## Dependências
 
